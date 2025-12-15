@@ -73,3 +73,10 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+WebGL_AWS_1/TemplateData/fullscreen-button.png
+/WebGL
+/WebGL2
+/WebGL_AWS_1
+/WebGL_AWS
+Assets/StreamingAssets/server_config.json.meta
+Assets/StreamingAssets/server_config.json
