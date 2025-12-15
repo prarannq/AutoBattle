@@ -1,0 +1,954 @@
+{
+    "items": [
+        {
+            "id": "RedFood",
+            "name": "RedFood",
+            "cost": 1,
+            "activationTiming": "battleStart",
+            "effect": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "ap",
+                        "formula": "15"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "GreenBook",
+            "name": "GreenBook",
+            "cost": 1,
+            "activationTiming": "loop",
+            "effect": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "mp",
+                        "formula": "14"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "BlueSword",
+            "name": "BlueSword",
+            "cost": 1,
+            "activationTiming": "attack",
+            "effect": {
+                "targetSelection": { "type": "frontAlly" },
+                "modifiers": [
+                    {
+                        "stat": "sp",
+                        "formula": "1"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "WhiteHat",
+            "name": "WhiteHat",
+            "cost": 1,
+            "activationTiming": "damageTaken",
+            "effect": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "ar",
+                        "formula": "1"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "WhiteArmor",
+            "name": "WhiteArmor",
+            "cost": 1,
+            "activationTiming": "damageTaken",
+            "effect": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "hp",
+                        "formula": "5"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "WhiteWeapon",
+            "name": "WhiteWeapon",
+            "cost": 1,
+            "activationTiming": "skill",
+            "effect": {
+                "targetSelection": { "type": "frontAlly" },
+                "modifiers": [
+                    {
+                        "stat": "hp",
+                        "formula": "75"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "DarkRobe",
+            "name": "DarkRobe",
+            "cost": 1,
+            "activationTiming": "skill",
+            "effect": {
+                "targetSelection": { "type": "frontEnemy" },
+                "modifiers": [
+                    {
+                        "stat": "ar",
+                        "formula": "-5"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "RedPotion",
+            "name": "RedPotion",
+            "cost": 2,
+            "activationTiming": "attack",
+            "effect": {
+                "targetSelection": {
+                    "type": "randomAlly",
+                    "count": 1
+                },
+                "modifiers": [
+                    {
+                        "stat": "ap",
+                        "formula": "2"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "GreenFood",
+            "name": "GreenFood",
+            "cost": 2,
+            "activationTiming": "battleStart",
+            "effect": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "mp",
+                        "formula": "30"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "GreenChest",
+            "name": "GreenChest",
+            "cost": 2,
+            "activationTiming": "battleStart",
+            "effect": {
+                "targetSelection": { "type": "allAllies" },
+                "modifiers": [
+                    {
+                        "stat": "mp",
+                        "formula": "15"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "BlueArmor",
+            "name": "BlueArmor",
+            "cost": 2,
+            "activationTiming": "damageTaken",
+            "effect": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "sp",
+                        "formula": "2"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "BlackRobe",
+            "name": "BlackRobe",
+            "cost": 2,
+            "activationTiming": "skill",
+            "effect": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "ad",
+                        "formula": "20"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "DarkWeapon",
+            "name": "DarkWeapon",
+            "cost": 2,
+            "activationTiming": "skill",
+            "effect": {
+                "targetSelection": {
+                    "type": "randomEnemy",
+                    "count": 1
+                },
+                "modifiers": [
+                    {
+                        "stat": "ar",
+                        "formula": "-20"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "HolyHelmet",
+            "name": "HolyHelmet",
+            "cost": 2,
+            "activationTiming": "battleStart",
+            "effect": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "mp",
+                        "formula": "25"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "GreenWeapon",
+            "name": "GreenWeapon",
+            "cost": 3,
+            "activationTiming": "skill",
+            "effect": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "mp",
+                        "formula": "50"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "BlueFood",
+            "name": "BlueFood",
+            "cost": 3,
+            "activationTiming": "battleStart",
+            "effect": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "sp",
+                        "formula": "50"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "WhitePotion",
+            "name": "WhitePotion",
+            "cost": 3,
+            "activationTiming": "attack",
+            "effect": {
+                "targetSelection": {
+                    "type": "randomAlly",
+                    "count": 1
+                },
+                "modifiers": [
+                    {
+                        "stat": "hp",
+                        "formula": "15"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "BlackPotion",
+            "name": "BlackPotion",
+            "cost": 3,
+            "activationTiming": "attack",
+            "effect": {
+                "targetSelection": {
+                    "type": "randomAlly",
+                    "count": 1
+                },
+                "modifiers": [
+                    {
+                        "stat": "ad",
+                        "formula": "3"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "BlackArmor",
+            "name": "BlackArmor",
+            "cost": 3,
+            "activationTiming": "damageTaken",
+            "effect": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "ad",
+                        "formula": "4"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "DarkHat",
+            "name": "DarkHat",
+            "cost": 3,
+            "activationTiming": "damageTaken",
+            "effect": {
+                "targetSelection": { "type": "frontEnemy" },
+                "modifiers": [
+                    {
+                        "stat": "ap",
+                        "formula": "-5"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "HolySword",
+            "name": "HolySword",
+            "cost": 3,
+            "activationTiming": "attack",
+            "effect": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "ap",
+                        "formula": "3"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "RedBook",
+            "name": "RedBook",
+            "cost": 4,
+            "activationTiming": "loop",
+            "effect": {
+                "targetSelection": { "type": "allAllies" },
+                "modifiers": [
+                    {
+                        "stat": "ap",
+                        "formula": "56"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "WhiteFood",
+            "name": "WhiteFood",
+            "cost": 4,
+            "activationTiming": "battleStart",
+            "effect": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "hp",
+                        "formula": "200"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "BlackShield",
+            "name": "BlackShield",
+            "cost": 4,
+            "activationTiming": "damageTaken",
+            "effect": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "ad",
+                        "formula": "7"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "DarkRing",
+            "name": "DarkRing",
+            "cost": 4,
+            "activationTiming": "loop",
+            "effect": {
+                "targetSelection": { "type": "allEnemies" },
+                "modifiers": [
+                    {
+                        "stat": "ad",
+                        "formula": "-56"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "HolyRobe",
+            "name": "HolyRobe",
+            "cost": 4,
+            "activationTiming": "skill",
+            "effect": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "hp",
+                        "formula": "500"
+                    },
+                    {
+                        "stat": "mp",
+                        "formula": "25"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "DevilHelmet",
+            "name": "DevilHelmet",
+            "cost": 4,
+            "activationTiming": "battleStart",
+            "effect": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "mp",
+                        "formula": "30"
+                    },
+                    {
+                        "stat": "ap",
+                        "formula": "35"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "RedHelmet",
+            "name": "RedHelmet",
+            "cost": 5,
+            "activationTiming": "battleStart",
+            "effect": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "ap",
+                        "formula": "100"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "GreenPotion",
+            "name": "GreenPotion",
+            "cost": 5,
+            "activationTiming": "attack",
+            "effect": {
+                "targetSelection": {
+                    "type": "randomAlly",
+                    "count": 1
+                },
+                "modifiers": [
+                    {
+                        "stat": "mp",
+                        "formula": "5"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "BlueHat",
+            "name": "BlueHat",
+            "cost": 5,
+            "activationTiming": "damageTaken",
+            "effect": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "sp",
+                        "formula": "12"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "WhiteChest",
+            "name": "WhiteChest",
+            "cost": 5,
+            "activationTiming": "battleStart",
+            "effect": {
+                "targetSelection": { "type": "allAllies" },
+                "modifiers": [
+                    {
+                        "stat": "hp",
+                        "formula": "200"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "BlackFood",
+            "name": "BlackFood",
+            "cost": 5,
+            "activationTiming": "battleStart",
+            "effect": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "ad",
+                        "formula": "80"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "BlackSword",
+            "name": "BlackSword",
+            "cost": 5,
+            "activationTiming": "attack",
+            "effect": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "ad",
+                        "formula": "5"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "DarkArmor",
+            "name": "DarkArmor",
+            "cost": 5,
+            "activationTiming": "damageTaken",
+            "effect": {
+                "targetSelection": { "type": "allEnemies" },
+                "modifiers": [
+                    {
+                        "stat": "ap",
+                        "formula": "-6"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "RedRobe",
+            "name": "RedRobe",
+            "cost": 6,
+            "activationTiming": "skill",
+            "effect": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "ap",
+                        "formula": "100"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "BlackHelmet",
+            "name": "BlackHelmet",
+            "cost": 6,
+            "activationTiming": "battleStart",
+            "effect": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "ad",
+                        "formula": "120"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "DarkFood",
+            "name": "DarkFood",
+            "cost": 6,
+            "activationTiming": "battleStart",
+            "effect": {
+                "targetSelection": { "type": "frontEnemy" },
+                "modifiers": [
+                    {
+                        "stat": "ar",
+                        "formula": "-40"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "HolyRing",
+            "name": "HolyRing",
+            "cost": 6,
+            "activationTiming": "loop",
+            "effect": {
+                "targetSelection": { "type": "allAllies" },
+                "modifiers": [
+                    {
+                        "stat": "ar",
+                        "formula": "70"
+                    },
+                    {
+                        "stat": "hp",
+                        "formula": "700"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "HolyWeapon",
+            "name": "HolyWeapon",
+            "cost": 6,
+            "activationTiming": "skill",
+            "effect": {
+                "targetSelection": { "type": "frontAlly" },
+                "modifiers": [
+                    {
+                        "stat": "ad",
+                        "formula": "100"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "DevilPotion",
+            "name": "DevilPotion",
+            "cost": 6,
+            "activationTiming": "attack",
+            "effect": {
+                "targetSelection": {
+                    "type": "randomAlly",
+                    "count": 1
+                },
+                "modifiers": [
+                    {
+                        "stat": "hp",
+                        "formula": "50"
+                    },
+                    {
+                        "stat": "mp",
+                        "formula": "8"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "RedHat",
+            "name": "RedHat",
+            "cost": 7,
+            "activationTiming": "damageTaken",
+            "effect": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "ap",
+                        "formula": "25"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "GreenRing",
+            "name": "GreenRing",
+            "cost": 7,
+            "activationTiming": "loop",
+            "effect": {
+                "targetSelection": { "type": "allAllies" },
+                "modifiers": [
+                    {
+                        "stat": "mp",
+                        "formula": "280"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "BlueRobe",
+            "name": "BlueRobe",
+            "cost": 7,
+            "activationTiming": "skill",
+            "effect": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "sp",
+                        "formula": "200"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "DarkHelmet",
+            "name": "DarkHelmet",
+            "cost": 7,
+            "activationTiming": "battleStart",
+            "effect": {
+                "targetSelection": { "type": "frontEnemy" },
+                "modifiers": [
+                    {
+                        "stat": "hp",
+                        "formula": "-200"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "HolyFood",
+            "name": "HolyFood",
+            "cost": 7,
+            "activationTiming": "battleStart",
+            "effect": {
+                "targetSelection": { "type": "allAllies" },
+                "modifiers": [
+                    {
+                        "stat": "hp",
+                        "formula": "500"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "HolyPotion",
+            "name": "HolyPotion",
+            "cost": 7,
+            "activationTiming": "attack",
+            "effect": {
+                "targetSelection": {
+                    "type": "randomAlly",
+                    "count": 2
+                },
+                "modifiers": [
+                    {
+                        "stat": "hp",
+                        "formula": "150"
+                    },
+                    {
+                        "stat": "ad",
+                        "formula": "10"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "GreenSword",
+            "name": "GreenSword",
+            "cost": 8,
+            "activationTiming": "attack",
+            "effect": {
+                "targetSelection": { "type": "frontAlly" },
+                "modifiers": [
+                    {
+                        "stat": "mp",
+                        "formula": "15"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "DarkShield",
+            "name": "DarkShield",
+            "cost": 8,
+            "activationTiming": "damageTaken",
+            "effect": {
+                "targetSelection": { "type": "allEnemies" },
+                "modifiers": [
+                    {
+                        "stat": "ad",
+                        "formula": "-15"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "DevilFood",
+            "name": "DevilFood",
+            "cost": 8,
+            "activationTiming": "battleStart",
+            "effect": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "ad",
+                        "formula": "80"
+                    },
+                    {
+                        "stat": "ap",
+                        "formula": "100"
+                    },
+                    {
+                        "stat": "ar",
+                        "formula": "80"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "DevilRing",
+            "name": "DevilRing",
+            "cost": 8,
+            "activationTiming": "loop",
+            "effect": {
+                "targetSelection": { "type": "allAllies" },
+                "modifiers": [
+                    {
+                        "stat": "ad",
+                        "formula": "175"
+                    },
+                    {
+                        "stat": "ap",
+                        "formula": "210"
+                    },
+                    {
+                        "stat": "ar",
+                        "formula": "175"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "DevilArmor",
+            "name": "DevilArmor",
+            "cost": 8,
+            "activationTiming": "damageTaken",
+            "effect": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "hp",
+                        "formula": "200"
+                    },
+                    {
+                        "stat": "ar",
+                        "formula": "10"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "DevilBook",
+            "name": "DevilBook",
+            "cost": 8,
+            "activationTiming": "loop",
+            "effect": {
+                "targetSelection": { "type": "allAllies" },
+                "modifiers": [
+                    {
+                        "stat": "ad",
+                        "formula": "175"
+                    },
+                    {
+                        "stat": "ap",
+                        "formula": "210"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "RedRing",
+            "name": "RedRing",
+            "cost": 9,
+            "activationTiming": "loop",
+            "effect": {
+                "targetSelection": { "type": "allAllies" },
+                "modifiers": [
+                    {
+                        "stat": "ap",
+                        "formula": "350"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "BlueBook",
+            "name": "BlueBook",
+            "cost": 9,
+            "activationTiming": "loop",
+            "effect": {
+                "targetSelection": { "type": "allAllies" },
+                "modifiers": [
+                    {
+                        "stat": "sp",
+                        "formula": "420"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "DarkPotion",
+            "name": "DarkPotion",
+            "cost": 9,
+            "activationTiming": "attack",
+            "effect": {
+                "targetSelection": {
+                    "type": "randomEnemy",
+                    "count": 1
+                },
+                "modifiers": [
+                    {
+                        "stat": "ap",
+                        "formula": "-13"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "BlackWeapon",
+            "name": "BlackWeapon",
+            "cost": 9,
+            "activationTiming": "skill",
+            "effect": {
+                "targetSelection": { "type": "frontAlly" },
+                "modifiers": [
+                    {
+                        "stat": "ad",
+                        "formula": "300"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "DevilRobe",
+            "name": "DevilRobe",
+            "cost": 9,
+            "activationTiming": "skill",
+            "effect": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "sp",
+                        "formula": "300"
+                    },
+                    {
+                        "stat": "ad",
+                        "formula": "300"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "specialFood",
+            "name": "specialFood",
+            "cost": 9,
+            "activationTiming": "battleStart",
+            "effect": {
+                "targetSelection": { "type": "allAllies" },
+                "modifiers": [
+                    {
+                        "stat": "hp",
+                        "formula": "600"
+                    },
+                    {
+                        "stat": "mp",
+                        "formula": "60"
+                    },
+                    {
+                        "stat": "ap",
+                        "formula": "60"
+                    }
+                ]
+            }
+        }
+    ]
+}

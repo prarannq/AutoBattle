@@ -1,0 +1,379 @@
+{
+    "units": [
+        {
+            "id": "Skeleton",
+            "hp": 2400,
+            "mpMax": 80,
+            "ad": 80,
+            "ap": 20,
+            "ar": 32,
+            "sp": 50,
+            "attackEffects": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "hp",
+                        "formula": "50"
+                    }
+                ]
+            },
+            "skillEffects": {
+                "targetSelection": { "type": "frontEnemy" },
+                "modifiers": [
+                    {
+                        "stat": "hp",
+                        "formula": "-((ar*8)+(ap*4))"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "King",
+            "hp": 3200,
+            "mpMax": 150,
+            "ad": 50,
+            "ap": 60,
+            "ar": 40,
+            "sp": 40,
+            "attackEffects": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "ar",
+                        "formula": "1"
+                    }
+                ]
+            },
+            "skillEffects": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "ar",
+                        "formula": "(ap*0.5)"
+                    },
+                    {
+                        "stat": "ad",
+                        "formula": "(ar*0.7)+(ap)"
+                    },
+                    {
+                        "stat": "ap",
+                        "formula": "(ar*0.3)"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "Knight",
+            "hp": 3200,
+            "mpMax": 60,
+            "ad": 60,
+            "ap": 50,
+            "ar": 24,
+            "sp": 70,
+            "attackEffects": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "ap",
+                        "formula": "1"
+                    }
+                ]
+            },
+            "skillEffects": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "hp",
+                        "formula": "(ap*0.5)"
+                    },
+                    {
+                        "stat": "ap",
+                        "formula": "(ap*0.2)"
+                    },
+                    {
+                        "stat": "ar",
+                        "formula": "(ap*0.1)"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "Hero",
+            "hp": 3600,
+            "mpMax": 120,
+            "ad": 40,
+            "ap": 40,
+            "ar": 48,
+            "sp": 40,
+            "attackEffects": {
+                "targetSelection": { "type": "allyBehind" },
+                "modifiers": [
+                    {
+                        "stat": "ad",
+                        "formula": "1"
+                    }
+                ]
+            },
+            "skillEffects": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "hp",
+                        "formula": "(ap*4)"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "Warrior",
+            "hp": 1600,
+            "mpMax": 150,
+            "ad": 100,
+            "ap": 30,
+            "ar": 24,
+            "sp": 70,
+            "attackEffects": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "ad",
+                        "formula": "1"
+                    }
+                ]
+            },
+            "skillEffects": {
+                "targetSelection": { "type": "frontEnemy" },
+                "modifiers": [
+                    {
+                        "stat": "hp",
+                        "formula": "-((ad+ap)*3)"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "Goblin",
+            "hp": 1280,
+            "mpMax": 100,
+            "ad": 80,
+            "ap": 80,
+            "ar": 8,
+            "sp": 80,
+            "attackEffects": {
+                "targetSelection": { "type": "frontEnemy" },
+                "modifiers": [
+                    {
+                        "stat": "ar",
+                        "formula": "-1"
+                    },
+                    {
+                        "stat": "ad",
+                        "formula": "-1"
+                    }
+                ]
+            },
+            "skillEffects": {
+                "targetSelection": {
+                    "type": "randomEnemy",
+                    "count": 1
+                },
+                "modifiers": [
+                    {
+                        "stat": "ad",
+                        "formula": "-(ap*0.3)"
+                    },
+                    {
+                        "stat": "ap",
+                        "formula": "-(ap*0.3)"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "Assassin",
+            "hp": 1000,
+            "mpMax": 70,
+            "ad": 80,
+            "ap": 50,
+            "ar": 16,
+            "sp": 100,
+            "attackEffects": {
+                "targetSelection": { "type": "frontEnemy" },
+                "modifiers": [
+                    {
+                        "stat": "sp",
+                        "formula": "-1"
+                    }
+                ]
+            },
+            "skillEffects": {
+                "targetSelection": {
+                    "type": "randomEnemy",
+                    "count": 3
+                },
+                "modifiers": [
+                    {
+                        "stat": "hp",
+                        "formula": "-((ad+ap)*0.9)"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "Samurai",
+            "hp": 1120,
+            "mpMax": 70,
+            "ad": 70,
+            "ap": 30,
+            "ar": 4,
+            "sp": 90,
+            "attackEffects": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "hp",
+                        "formula": "(ad*0.2)"
+                    }
+                ]
+            },
+            "skillEffects": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "ad",
+                        "formula": "(ap*0.2)"
+                    },
+                    {
+                        "stat": "sp",
+                        "formula": "20"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "FireMage",
+            "hp": 960,
+            "mpMax": 100,
+            "ad": 50,
+            "ap": 130,
+            "ar": 16,
+            "sp": 50,
+            "attackEffects": {
+                "targetSelection": {
+                    "type": "randomAlly",
+                    "count": 1
+                },
+                "modifiers": [
+                    {
+                        "stat": "hp",
+                        "formula": "60"
+                    }
+                ]
+            },
+            "skillEffects": {
+                "targetSelection": {
+                    "type": "randomEnemy",
+                    "count": 3
+                },
+                "modifiers": [
+                    {
+                        "stat": "hp",
+                        "formula": "-(ap*4)"
+                    },
+                    {
+                        "stat": "ad",
+                        "formula": "-(ap*0.4)"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "DarkMage",
+            "hp": 1120,
+            "mpMax": 80,
+            "ad": 30,
+            "ap": 120,
+            "ar": 24,
+            "sp": 60,
+            "attackEffects": {
+                "targetSelection": { "type": "frontAlly" },
+                "modifiers": [
+                    {
+                        "stat": "ap",
+                        "formula": "1"
+                    }
+                ]
+            },
+            "skillEffects": {
+                "targetSelection": { "type": "allAllies" },
+                "modifiers": [
+                    {
+                        "stat": "hp",
+                        "formula": "(ap*1.5)"
+                    },
+                    {
+                        "stat": "ap",
+                        "formula": "(ap*0.4)"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "BloodMage",
+            "hp": 800,
+            "mpMax": 100,
+            "ad": 30,
+            "ap": 150,
+            "ar": 16,
+            "sp": 40,
+            "attackEffects": {
+                "targetSelection": { "type": "self" },
+                "modifiers": [
+                    {
+                        "stat": "ap",
+                        "formula": "1"
+                    }
+                ]
+            },
+            "skillEffects": {
+                "targetSelection": { "type": "frontlineEnemies" },
+                "modifiers": [
+                    {
+                        "stat": "hp",
+                        "formula": "-(ap*8)"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "Witch",
+            "hp": 1200,
+            "mpMax": 60,
+            "ad": 50,
+            "ap": 120,
+            "ar": 24,
+            "sp": 70,
+            "attackEffects": {
+                "targetSelection": {
+                    "type": "randomAlly",
+                    "count": 1
+                },
+                "modifiers": [
+                    {
+                        "stat": "sp",
+                        "formula": "1"
+                    }
+                ]
+            },
+            "skillEffects": {
+                "targetSelection": { "type": "allAllies" },
+                "modifiers": [
+                    {
+                        "stat": "hp",
+                        "formula": "(ap*4)"
+                    }
+                ]
+            }
+        }
+    ]
+}
