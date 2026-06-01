@@ -1,12 +1,12 @@
 {
-  "baseUrl": "https://YOUR-PROD-DOMAIN-OR-IP",
-  "runPythonPath": "Api/run_python.php",
-  "registerPath": "Api/register_player.php",
-  "insertRoundPath": "Api/insert_round.php",
-  "logDataPath": "Api/log_data.php",
-  "logActionPath": "Api/log_action.php",
-  "getRoundPath": "Api/get_round.php?round_number={round}",
-  "unitWinRatePath": "Api/unit_win_rate.php",
-  "statsPath": "Api/get_statistics.php",
-  "predictPath": "predict"
+    "baseUrl": "https://YOUR-CLOUDFRONT-DOMAIN",
+    "registerPath": "register_player.php",
+    "insertRoundPath": "insert_round.php",
+    "logDataPath": "log_data.php",
+    "logActionPath": "log_action.php",
+    "getRoundPath": "get_round.php?round_number={round}",
+    "runPythonPath": "predict",
+    "unitWinRatePath": "unit_win_rate.php",
+    "statsPath": "get_statistics.php",
+    "predictPath": "predict"
 }

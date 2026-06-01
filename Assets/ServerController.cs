@@ -135,6 +135,7 @@ public class ServerController : MonoBehaviour
             if (www.result == UnityWebRequest.Result.Success)
             {
                 Debug.Log("Received JSON Data: " + www.downloadHandler.text);
+                Debug.Log("LoadEnemyUnits response raw: " + www.downloadHandler.text);
                 EnemyUnitsResponse response = JsonUtility.FromJson<EnemyUnitsResponse>(www.downloadHandler.text);
 
                 if (response.status == "success")
@@ -179,6 +180,8 @@ public class ServerController : MonoBehaviour
             if (www.result == UnityWebRequest.Result.Success)
             {
                 string json = www.downloadHandler.text;
+                Debug.Log("GetPlayerId response raw: " + json);
+
                 PlayerIdResponse response = JsonUtility.FromJson<PlayerIdResponse>(json);
                 playerId = response.player_id;
                 gameController.playerId = playerId;
@@ -268,6 +271,7 @@ public class ServerController : MonoBehaviour
             {
                 Debug.Log("Log sent successfully: " + request.downloadHandler.text);
                 string responseText = request.downloadHandler.text;
+                Debug.Log("UploadLog response raw: " + responseText);
                 StateResponse response = JsonUtility.FromJson<StateResponse>(responseText);
                 stateId = response.state_id;
 

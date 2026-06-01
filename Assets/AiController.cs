@@ -167,7 +167,8 @@ public class AiController : MonoBehaviour
 
             // 6) ƒŒƒXƒ|ƒ“ƒX‰ğÍ
             string responseText = request.downloadHandler.text;
-            Debug.Log("Server Response: " + responseText);
+            Debug.Log("Predict response raw: " + responseText);
+
 
             PythonResponse response = null;
             try { response = JsonUtility.FromJson<PythonResponse>(responseText); }
