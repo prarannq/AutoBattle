@@ -38,6 +38,7 @@ Unityで制作した2Dオートバトルゲームです。
 
 Unity WebGLからAWS上のAPIへHTTP通信を行っています。
 
+```text
 Unity WebGL
     ↓ HTTP通信
 AWS EC2上のAPI
@@ -49,6 +50,7 @@ AWS EC2上のAPI
     │
     └─ Python
         └─ 現在の編成の勝率推定
+```
 
 Amazon RDS
     └─ プレイヤー情報、編成、アイテム、対戦結果などを保存
